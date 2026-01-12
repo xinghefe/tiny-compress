@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\CompressImage]
+@="一键压缩"
+"Icon"="D:\\app\\tiny-compress\\bin\\magick.exe"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\CompressImage\command]
+@="\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"D:\\app\\tiny-compress\\bin\\CompressImage.ps1\" -FilePath \"%1\" -Mode Auto"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\CompressImageCustom]
+@="自定义压缩"
+"Icon"="D:\\app\\tiny-compress\\bin\\magick.exe"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\CompressImageCustom\command]
+@="\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"D:\\app\\tiny-compress\\bin\\CompressImage.ps1\" -FilePath \"%1\" -Mode Custom"
